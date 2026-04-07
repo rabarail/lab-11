@@ -33,3 +33,13 @@ def test_negative_820():
 def test_non_numeric_raises_type_error():
     with pytest.raises(TypeError):
         adjust_rotation("not a number")
+
+""" Running Tests: 
+test_rotation_utils.py::test_positive_100 PASSED                                                                      [ 14%]
+test_rotation_utils.py::test_positive_460 PASSED                                                                      [ 28%]
+test_rotation_utils.py::test_positive_820 PASSED                                                                      [ 42%]
+test_rotation_utils.py::test_negative_100 PASSED                                                                      [ 57%]
+test_rotation_utils.py::test_negative_460 PASSED                                                                      [ 71%]
+test_rotation_utils.py::test_negative_820 PASSED                                                                      [ 85%]
+test_rotation_utils.py::test_non_numeric_raises_type_error PASSED
+"""
