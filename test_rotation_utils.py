@@ -20,5 +20,13 @@ def test_positive_460():
 def test_positive_820():
     assert adjust_rotation(820) == 100 
 
+def test_negative_100():
+    assert adjust_rotation(-100) == 260
 
+def test_negative_460():
+    assert adjust_rotation(-460) == 260
+
+def test_negative_820():
+    assert adjust_rotation(-820) == 260
+    
 
