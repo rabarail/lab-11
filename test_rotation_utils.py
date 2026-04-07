@@ -28,5 +28,8 @@ def test_negative_460():
 
 def test_negative_820():
     assert adjust_rotation(-820) == 260
-    
 
+
+def test_non_numeric_raises_type_error():
+    with pytest.raises(TypeError):
+        adjust_rotation("not a number")
